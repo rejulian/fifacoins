@@ -1,0 +1,199 @@
+:root{
+    --span-color: #ffc300;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto,sans-serif;
+}
+
+h1, h2, h3, h4, p, span {
+    font-family: Montserrat,sans-serif;
+}
+
+#hero{
+    background: url(./img/hero.webp) no-repeat center top;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero p{
+    font-size: 36px;
+    font-weight: 900;
+    color: white;
+}
+
+#hero h1{
+    font-size: 90px;
+    font-weight: 900;
+    color: white;
+}
+
+span{
+    color: var(--span-color);
+}
+
+.wsp-btn{
+    background: #16A400;
+    border: 3px solid #16A400;
+    padding: 20px 80px;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.wsp-btn:hover{
+    background-color: white;
+    border: 3px solid #16A400;
+    color: #16A400;
+    transition: 0.5s;
+}
+
+#promos{
+    background-color: white;
+    margin-top: 40px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title h2{
+    background-color: var(--span-color);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 30px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.title h1{
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: -2px 1px var(--span-color);
+
+}
+
+.promos-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.promo{
+    width: 300px;
+    height: 400px;
+    border: 1px solid rgb(222, 222, 222);
+    margin: 0 10px;
+}
+
+.promo img{
+    width: 299px;
+}
+
+.text-promo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.text-promo p{
+    font-size: 23px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.price{
+    color: #16A400;
+    font-weight: 400 !important;
+}
+
+.buy-btn{
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.buy-btn:hover{
+    background-color: black;
+    color: var(--span-color);
+    transition: 0.5s;
+}
+
+#pagos{
+    height: 150px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagos img{
+    width: 200px;
+    margin: 0px 40px;
+}
+
+#boosting{
+    position: relative;
+    background: url(./img/banner.webp) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#boosting::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,.8) 100%);
+}
+
+#boosting h1{
+    color: white;
+    font-size: 42px;
+    font-weight: 900;
+    z-index: 100;
+    margin-bottom: 15px;
+}
+
+#boosting img{
+    margin: 15px 0;
+    z-index: 100;
+}
+
+#boosting p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    margin: 15px 0;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
