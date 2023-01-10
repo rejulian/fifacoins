@@ -27,12 +27,14 @@ h1, h2, h3, h4, p, span {
     font-size: 36px;
     font-weight: 900;
     color: white;
+    text-align: center;
 }
 
 #hero h1{
     font-size: 90px;
     font-weight: 900;
     color: white;
+    text-align: center;
 }
 
 span{
@@ -139,12 +141,18 @@ span{
     height: 150px;
     background-color: #f9f9f9;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pagos div{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #pagos img{
-    width: 200px;
+    max-width: 200px;
     margin: 0px 40px;
 }
 
@@ -175,6 +183,7 @@ span{
     font-weight: 900;
     z-index: 100;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 #boosting img{
@@ -196,4 +205,69 @@ footer{
     align-items: center;
     justify-content: center;
     font-size: 15px;
+}
+
+
+/* MEDIA QUERYS */
+
+@media(max-width: 1320px){
+    #hero p{
+        font-size: 20px;
+    }
+
+    #hero h1{
+        font-size: 55px;
+    }
+
+    .wsp-btn{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    #pagos img{
+        width: 100px;
+        margin: 0 10px;
+    }
+}
+
+@media(max-width:750px){
+    #boosting h1{
+        font-size: 32px;
+    }
+
+    #boosting img{
+        width: 450px;
+    }
+
+    #boosting p{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:610px){
+    #pagos div{
+        flex-wrap: wrap;
+    }
+
+    #pagos img{
+        width: 80px;
+        margin: 10px 4px;
+    }
+}
+
+@media(max-width:500px){
+
+    #boosting{
+        height: 380px;
+    }
+
+    #boosting h1{
+        font-size: 20px;
+    }
+    #boosting img{
+        width: 250px;
+    }
+    #boosting p{
+        font-size: 15px;
+    }
 }
